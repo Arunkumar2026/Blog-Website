@@ -3,9 +3,6 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import toast from "react-hot-toast";
 
 const Navbar = () => {
-    const handletoast = () => {
-        toast.success("Success")
-    }
   return (
     <div className="navbar bg-base-100 shadow-md px-4 md:px-10">
         <div className="flex-1">
@@ -15,7 +12,7 @@ const Navbar = () => {
             <Link to="/" className="btn btn-ghost">Home</Link>
             <Link to="/login" className="btn btn-ghost">Login</Link>
             <Link to="/signup" className="btn btn-ghost">Signup</Link>
-            <Link to="/create" className="btn btn-primary" onClick={handletoast}>Create Blog</Link>
+            <Link to="/create" className="btn btn-primary">Create Blog</Link>
         </div>
 
         <div className="dropdown dropdown-end md:hidden">

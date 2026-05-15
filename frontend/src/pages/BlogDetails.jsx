@@ -24,6 +24,7 @@ const BlogDetails = () => {
       setBlog(data);
     } catch (error) {
       toast.error("Failed to load blog");
+      console.log(error);
     }  finally {
     setLoading(false);
   
